@@ -3,6 +3,9 @@ DevTechBytes
 https://www.youtube.com/@DevTechBytes
 """
 import tempfile
+from PIL import Image
+from PIL import IptcImagePlugin
+import streamlit as st
 
 def read_file_content(file_name):
     # opens file to read
