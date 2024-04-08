@@ -2,10 +2,9 @@
 DevTechBytes
 https://www.youtube.com/@DevTechBytes
 """
+import io
 import tempfile
 from PIL import Image
-from PIL import IptcImagePlugin
-import streamlit as st
 
 def read_file_content(file_name):
     # opens file to read
@@ -22,3 +21,15 @@ def create_temp_file(text_file):
         tmp_path = tmp.name  # Save the path where the tempfile has been written
 
         return tmp_path
+
+def get_image_bytes(image_file):
+    # Open the image file
+    image_path = image_file  # Replace with the path to your image file
+    image = Image.open(image_path)
+
+    # Convert the image to bytes
+    with io.BytesIO() as output:
+        image.save(output, format="png")  # Change the format as needed (e.g., JPEG, PNG)
+        image_bytes = output.getvalue()
+    
+    return image_bytes

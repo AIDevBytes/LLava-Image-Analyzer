@@ -2,7 +2,6 @@
 DevTechBytes
 https://www.youtube.com/@DevTechBytes
 """
-import os
 
 class Config:
     PAGE_TITLE = "LLava Image Analyzer"
