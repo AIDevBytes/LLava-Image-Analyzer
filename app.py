@@ -24,10 +24,6 @@ with st.sidebar:
     # creates selectbox to pick the model we would like to use
     image_model = st.selectbox('Which image model would you like to use?', Config.OLLAMA_MODELS)
 
-if uploaded_file is not None:
-    # creates a temp file for the text we will transcribe
-    temp_file = create_temp_file(uploaded_file)
-
 if chat_input := st.chat_input("What would you like to ask?"):
     if uploaded_file is None:
         st.error('You must select an image file to analyze!')
@@ -38,7 +34,7 @@ if chat_input := st.chat_input("What would you like to ask?"):
         st.write(":orange[Analyzing Image File...]")
 
         # creates the audio file
-        stream = analyze_image_file(temp_file, model=image_model, user_prompt=chat_input)
+        stream = analyze_image_file(uploaded_file, model=image_model, user_prompt=chat_input)
        
         stream_output = st.write_stream(stream_parser(stream))
 
