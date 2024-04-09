@@ -1,2 +1,2 @@
+ollama
 streamlit
-python-dotenv
