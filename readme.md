@@ -7,7 +7,7 @@ This repo is a companion to the YouTube video series <a href="#">here</a>
 To clone the starter_project you can run the following command:
 
 ```
-git clone -b starter_project 
+git clone -b starter_project https://github.com/DevTechBytes/LLava-Image-Analyzer.git
 ```
 
 ## Chatbot Features include:
