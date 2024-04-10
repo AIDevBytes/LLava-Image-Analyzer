@@ -1,6 +1,6 @@
 # LLava Image Analyzer
 
-This repo is a companion to the YouTube video <a href="https://youtu.be/1IosVm-OERs">Ollama & LLava | Build a FREE Image Analyzer Chatbot Using Ollama, LLava & Streamlit!</a>
+This repo is a companion to the YouTube video <a href="https://youtu.be/1IosVm-OERs">Llava, Ollama and Streamlit | Create POWERFUL Image Analyzer Chatbot for FREE - Windows & Mac</a>
 
 
 ### Cloning starter_project Branch
